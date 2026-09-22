@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Community + Media — Women's Events in Chicago | FemmeHaus</title>
+<meta name="description" content="Culturally relevant events for women in Chicago, plus the media that keeps the conversation going. RSVP to the next FemmeHaus moment and join the community.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="community">
+<div id="site-header"></div>
+
+<main>
+  <section class="hero hero--short">
+    <div class="wrap hero__in">
+      <div>
+        <span class="label">Room 01 · Community + Media</span>
+        <h1>We create the <em>moments.</em></h1>
+        <p class="lede">Culturally relevant events women want to attend, and the media that keeps the conversation going between them. Chicago first.</p>
+        <div class="btn-row">
+          <a class="btn btn--solid" href="#join">Get on the list</a>
+          <a class="btn" href="events.html">See events</a>
+        </div>
+      </div>
+      <div class="arch arch--b" data-reveal style="max-width:340px;margin-left:auto"><img src="assets/img/p/golf-cart.jpg" alt="Two guests in tennis whites lean on a golf cart beside a Fore the Girls sign" style="object-position:35% 50%"></div>
+    </div>
+  </section>
+
+  <!-- UPCOMING -->
+  <section class="sec sec--wine" id="calendar">
+    <div class="wrap">
+      <div class="head" data-reveal><span class="label">Upcoming</span><h2>On the <em>calendar.</em></h2></div>
+      <div id="upcoming"></div>
+    </div>
+  </section>
+
+  <!-- PAST EVENTS: one card per night, each opens its own section on the Events page -->
+  <section class="sec sec--cream" id="events">
+    <div class="wrap">
+      <div class="head" data-reveal><span class="label">Past events</span><h2>Nights <em>we’ve thrown.</em></h2>
+        <p class="lede">Every night has its own story and its own photos — pick one.</p></div>
+      <div class="ecards" id="event-cards"></div>
+      <div style="margin-top:48px"><a class="btn btn--solid" href="events.html">All events, in full</a></div>
+    </div>
+  </section>
+
+  <!-- REELS -->
+  <section class="sec sec--wine">
+    <div class="wrap">
+      <div class="head head--center" data-reveal><span class="label">In motion</span><h2>Press <em>play.</em></h2></div>
+      <div class="reels" id="reels"></div>
+    </div>
+  </section>
+
+  <!-- FACES OF THE HAUS -->
+  <section class="sec sec--cream">
+    <div class="wrap">
+      <div class="head" data-reveal><span class="label">The community</span><h2>Faces of <em>the Haus.</em></h2></div>
+      <div class="faces" id="portraits"></div>
+    </div>
+  </section>
+
+  <!-- MEDIA HUB TEASER -->
+  <section class="sec sec--deep">
+    <div class="wrap">
+      <div class="head" data-reveal><span class="label">Media</span><h2>Fresh from <em>the hub.</em></h2>
+        <p class="lede">Recaps, editorials and culture pieces — new content between every event.</p></div>
+      <div class="cards" id="media-cards" data-limit="3"></div>
+      <div style="margin-top:44px"><a class="btn" href="media.html">Explore the media hub</a></div>
+    </div>
+  </section>
+
+  <!-- SPONSOR (soft sell) -->
+  <section class="sec sec--wine" id="sponsor">
+    <div class="wrap split">
+      <div data-reveal>
+        <span class="label">Sponsor with us</span>
+        <h2 style="margin:22px 0 24px">Be seen where <em>culture gathers.</em></h2>
+        <p class="lede">Our guests are tastemakers, creators and early adopters. Sponsoring a FemmeHaus event puts your brand in the conversation — naturally, and in good company.</p>
+        <p>Looking for a fully built brand experience? <a class="link" href="activations.html">Explore Activations</a></p>
+      </div>
+      <div class="panel" data-reveal>
+        <form class="form" data-form="sponsor" data-success="Thank you ✦ We’ll be in touch soon.">
+          <div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+          <div class="row">
+            <div class="field"><label for="sp-name">Name</label><input id="sp-name" name="name" required data-name="name" autocomplete="name"></div>
+            <div class="field"><label for="sp-brand">Brand</label><input id="sp-brand" name="brand" required data-name="brand" autocomplete="organization"></div>
+          </div>
+          <div class="field"><label for="sp-email">Email</label><input id="sp-email" name="email" type="email" required data-name="email" autocomplete="email"></div>
+          <div class="field"><label for="sp-note">What do you have in mind?</label><textarea id="sp-note" name="message" placeholder="A few words is plenty."></textarea></div>
+          <button class="btn btn--solid" type="submit">Start the conversation</button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="sec sec--cream">
+    <div class="wrap">
+      <div class="head head--center" data-reveal><span class="label">In their words</span><h2>What guests <em>say.</em></h2></div>
+      <div class="grid g3">
+        <div class="quote" style="background:var(--wine-800);color:var(--cream)" data-reveal><span class="stars">★★★★★</span><p class="todo">“[Attendee testimonial — add real quote.]”</p><cite>[Name], attendee</cite></div>
+        <div class="quote" style="background:var(--wine-800);color:var(--cream)" data-reveal><span class="stars">★★★★★</span><p class="todo">“[Attendee testimonial — add real quote.]”</p><cite>[Name], attendee</cite></div>
+        <div class="quote" style="background:var(--wine-800);color:var(--cream)" data-reveal><span class="stars">★★★★★</span><p class="todo">“[Attendee testimonial — add real quote.]”</p><cite>[Name], attendee</cite></div>
+      </div>
+      <div class="press todo" style="margin-top:64px;padding:14px"><span>[Press]</span><span>[Mentions]</span><span>[Go here]</span></div>
+    </div>
+  </section>
+
+  <!-- SIGNUP -->
+  <section class="sec sec--deep band" id="join">
+    <div class="wrap" data-reveal>
+      <span class="label">The list</span>
+      <h2>Get on the <em>list.</em></h2>
+      <p class="lede" style="margin:0 auto 32px">First to know about events, RSVPs and drops. One email, no noise.</p>
+      <form class="form inline-form" data-form="community" data-success="You’re on the list ✦ See you at the Haus.">
+        <div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="field"><label for="cj-email">Email</label><input id="cj-email" name="email" type="email" required data-name="email" placeholder="you@email.com" autocomplete="email"></div>
+        <button class="btn btn--solid" type="submit">Join</button>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

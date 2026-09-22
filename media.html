@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Hub — Recaps, Editorials & Culture | FemmeHaus</title>
+<meta name="description" content="Event recaps, editorials and culture pieces from FemmeHaus — new content between every moment.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="community">
+<div id="site-header"></div>
+
+<main>
+  <section class="hero hero--text hero--short">
+    <div class="wrap hero__in">
+      <div>
+        <span class="label">Community + Media</span>
+        <h1>The <em>media</em> hub.</h1>
+        <p class="lede">Recaps, editorials and culture pieces — because a moment shouldn’t end when the doors close.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--cream">
+    <div class="wrap">
+      <div class="chips" role="group" aria-label="Filter content">
+        <button class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="recap" aria-pressed="false">Recaps</button>
+        <button class="chip" data-filter="editorial" aria-pressed="false">Editorials</button>
+        <button class="chip" data-filter="culture" aria-pressed="false">Culture</button>
+      </div>
+      <div class="cards" id="media-cards"></div>
+    </div>
+  </section>
+
+  <section class="sec sec--wine band" id="join">
+    <div class="wrap" data-reveal>
+      <span class="label">Never miss a drop</span>
+      <h2>Get the next <em>issue.</em></h2>
+      <form class="form inline-form" style="margin:28px auto 0" data-form="community" data-success="You’re on the list ✦">
+        <div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="field"><label for="mj-email">Email</label><input id="mj-email" name="email" type="email" required data-name="email" placeholder="you@email.com" autocomplete="email"></div>
+        <button class="btn btn--solid" type="submit">Join</button>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

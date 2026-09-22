@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FemmeHaus — Women, Culture & Brand Activation in Chicago</title>
+<meta name="description" content="FemmeHaus is a community platform and media company at the intersection of women, culture and brand activation. Events, experiences for brands, and education — in Chicago.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+/* Logo intro: plays on every load; skipped only for reduced-motion. */
+(function () {
+  var d = document.documentElement, play = true;
+  try {
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) play = false;
+  } catch (e) {}
+  if (play) { d.classList.add('intro-active'); setTimeout(function () { d.classList.remove('intro-active'); }, 9500); }
+})();
+</script>
+</head>
+<body data-page="home">
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__bg"></div>
+  <div class="intro__logo" id="intro-logo"><canvas id="cv-f"></canvas><canvas id="cv-h"></canvas></div>
+  <button class="intro__skip" type="button" tabindex="-1">Skip</button>
+</div>
+<div id="site-header"></div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__in">
+      <div>
+        <span class="label">Women · Culture · Brands</span>
+        <h1>Be at the <em>moment</em>.</h1>
+        <p class="lede">FemmeHaus is a community platform and media company at the intersection of women, culture and brand activation. Our Haus is your Haus.</p>
+        <div class="btn-row">
+          <a class="btn btn--solid" href="community.html#join">Get on the list</a>
+          <a class="btn" href="activations.html#proposal">Work with us</a>
+        </div>
+      </div>
+      <div class="stack" data-reveal>
+        <div class="roomtag">Now in<b>Chicago</b></div>
+        <div class="arch arch--a"><img src="assets/img/p/wnba-sign.jpg" alt="Two guests hold the WNBA All-Star Weekend Happy Hour sign inside Marc Nolan" style="object-position:50% 40%"></div>
+        <div class="arch arch--b"><img src="assets/img/p/portrait-3-s.jpg" alt="A guest with long curls in a cream top, lit by camera flash" style="object-position:50% 25%"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>We create the <em>moments</em></span><span class="star">✦</span>
+      <span>We create the <em>experience</em> for brands</span><span class="star">✦</span>
+      <span>We create <em>access</em> &amp; education</span><span class="star">✦</span>
+    </div>
+  </div>
+
+  <!-- THREE ROOMS -->
+  <section class="sec sec--cream">
+    <div class="wrap">
+      <div class="head" data-reveal>
+        <span class="label">One Haus, three rooms</span>
+        <h2>Step inside <em>each room.</em></h2>
+      </div>
+
+      <article class="room" data-reveal>
+        <div class="room__no">01</div>
+        <div class="room__body">
+          <span class="label">Community + Media</span>
+          <h3>FemmeHaus</h3>
+          <p class="room__line">We create the moments.</p>
+          <p>We keep you at the core of the culture and create media that keeps the conversation going while centering brands that need cultural visibility.</p>
+          <a class="btn" href="community.html">Enter the room</a>
+        </div>
+        <div class="room__img"><img loading="lazy" src="assets/img/p/golf-cart.jpg" alt="Two guests in tennis whites lean on a golf cart beside a Fore the Girls sign"></div>
+      </article>
+
+      <article class="room room--featured" data-reveal>
+        <div class="room__no">02</div>
+        <div class="room__body">
+          <span class="label">For brands</span>
+          <h3>Activations by FemmeHaus</h3>
+          <p class="room__line">We create the experience for brands.</p>
+          <p>We build your world for our girls. Gifting, sponsorship and full presenting partnerships, designed with the community that already shows up.</p>
+          <a class="btn btn--solid" href="activations.html">Enter the room</a>
+        </div>
+        <div class="room__img"><img loading="lazy" src="assets/img/p/gifting-pattern.jpg" alt="Hair-care products laid out on a tote reading Hair Care Is Self-Care" style="object-position:50% 45%"></div>
+      </article>
+
+      <article class="room" data-reveal>
+        <div class="room__no">03</div>
+        <div class="room__body">
+          <span class="label">Learn</span>
+          <h3>FemmeHaus Academy</h3>
+          <p class="room__line">We create access and education.</p>
+          <p>Financial literacy, entrepreneurship, creator education, career development, wellness, investing, homeownership and negotiation — taught by people who’ve done it.</p>
+          <a class="btn" href="academy.html">Enter the room</a>
+        </div>
+        <div class="room__img"><img loading="lazy" src="assets/img/p/dinner-speaker.jpg" alt="A host speaks into a microphone above a table of red flowers" style="object-position:50% 42%"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- THE MOMENTS -->
+  <section class="sec sec--wine">
+    <div class="wrap">
+      <div class="head" data-reveal>
+        <span class="label">Recently at the Haus</span>
+        <h2>Moments <em>worth showing up for.</em></h2>
+      </div>
+      <div class="masonry" id="moments" data-limit="6"></div>
+      <div class="btn-row" style="margin-top:48px"><a class="btn" href="community.html#events">All events</a><a class="btn" href="media.html">Media hub</a></div>
+    </div>
+  </section>
+
+  <!-- STATS (fill with real numbers) -->
+  <section class="sec sec--bone" style="padding-block:clamp(56px,7vw,100px)">
+    <div class="wrap">
+      <div class="stats" data-reveal>
+        <div class="stat"><b class="todo">[000]+</b><span>Guests hosted</span></div>
+        <div class="stat"><b class="todo">[00]</b><span>Events produced</span></div>
+        <div class="stat"><b class="todo">[00K]</b><span>Community reach</span></div>
+        <div class="stat"><b class="todo">[00]</b><span>Brand partners</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND TEASER -->
+  <section class="sec sec--deep">
+    <div class="wrap split">
+      <div data-reveal>
+        <h2 style="margin:0 0 26px">Be in the room <em>she’s already in.</em></h2>
+        <p class="lede">From WNBA All-Star Weekend with Marc Nolan to intimate private screenings, we design moments women choose to attend, with your brand implemented from the very first sketch.</p>
+        <div class="btn-row"><a class="btn btn--solid" href="activations.html#proposal">Request a proposal</a><a class="btn" href="activations.html#tiers">See partnership tiers</a></div>
+      </div>
+      <div data-reveal><div class="arch arch--b" style="max-width:420px;margin-left:auto"><img loading="lazy" src="assets/img/flyer-wnba-happy-hour.jpg" alt="WNBA All-Star Weekend Happy Hour flyer, presented with Marc Nolan" style="object-position:top"></div></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (fill with real quotes) -->
+  <section class="sec sec--wine">
+    <div class="wrap">
+      <div class="head head--center" data-reveal><span class="label">In their words</span><h2>Real moments. <em>Real women.</em></h2></div>
+      <div class="grid g3">
+        <div class="quote" data-reveal><span class="stars">★★★★★</span><p>“FemmeHaus knows how to do it! Great people, great vibes.”</p><cite>@_blainesimone</cite></div>
+        <div class="quote" data-reveal><span class="stars">★★★★★</span><p>“Amazing is an understatement.”</p><cite>@bosthetics</cite></div>
+        <div class="quote" data-reveal><span class="stars">★★★★★</span><p>“Fucking iconic.”</p><cite>@sravberry</cite></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNUP -->
+  <section class="sec sec--cream band" id="join">
+    <div class="wrap" data-reveal>
+      <span class="label">The list</span>
+      <h2>Get on the <em>list.</em></h2>
+      <p class="lede" style="margin:0 auto 32px">First to know about events, RSVPs and drops. One email, no noise.</p>
+      <form class="form inline-form" data-form="community" data-success="You’re on the list ✦ See you at the Haus.">
+        <div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="field"><label for="hj-email">Email</label><input id="hj-email" name="email" type="email" required data-name="email" placeholder="you@email.com" autocomplete="email"></div>
+        <button class="btn btn--solid" type="submit">Join</button>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+<script>/* the intro (and its 113 KB of stroke data) only loads when it is actually going to play */
+if (document.documentElement.classList.contains("intro-active")) document.write('<script src="js/intro-data.js"><\/script><script src="js/intro.js"><\/script>');</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | FemmeHaus</title>
+<meta name="description" content="Get in touch with FemmeHaus — community, brand partnerships, Academy or press.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+
+<main>
+  <section class="hero hero--text hero--short">
+    <div class="wrap hero__in">
+      <div>
+        <span class="label">Contact</span>
+        <h1>Say <em>hello.</em></h1>
+        <p class="lede">Questions, ideas, collaborations — we read everything. Brands looking for a partnership should use <a class="link" href="activations.html#proposal">Request a Proposal</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--cream">
+    <div class="wrap split">
+      <div data-reveal>
+        <span class="label">Reach us</span>
+        <p class="lede" style="margin-top:22px">Email <a class="link" id="c-mail" href="#">hello@femmehaus.com</a><br>Instagram <a class="link" id="c-ig" href="#" target="_blank" rel="noopener">@femmehaus</a><br>Based in Chicago.</p>
+      </div>
+      <div data-reveal>
+        <form class="form" data-form="contact" data-success="Thank you ✦ We’ll reply soon.">
+          <div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+          <div class="row">
+            <div class="field"><label for="ct-name">Name</label><input id="ct-name" name="name" required data-name="name" autocomplete="name"></div>
+            <div class="field"><label for="ct-email">Email</label><input id="ct-email" name="email" type="email" required data-name="email" autocomplete="email"></div>
+          </div>
+          <div class="field"><label for="ct-topic">I’m reaching out about</label>
+            <select id="ct-topic" name="topic" required data-name="topic"><option value="">Select</option><option>Community &amp; events</option><option>Academy</option><option>Press</option><option>Something else</option></select></div>
+          <div class="field"><label for="ct-msg">Message</label><textarea id="ct-msg" name="message" required data-name="message"></textarea></div>
+          <button class="btn btn--solid" type="submit">Send</button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+<script>
+  var m = document.getElementById("c-mail"), i = document.getElementById("c-ig");
+  m.href = "mailto:" + FH_CONFIG.email; m.textContent = FH_CONFIG.email; i.href = FH_CONFIG.instagram;
+</script>
+</body>
+</html>

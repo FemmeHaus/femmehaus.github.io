@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events — Every Night, In Photos | FemmeHaus</title>
+<meta name="description" content="Every FemmeHaus night, one by one: WNBA All-Star Weekend Happy Hour, the 10% masquerade, Dinner at the Haus, The Legacy Edit and more — with photos and the story of each.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="events">
+<div id="site-header"></div>
+
+<main>
+  <section class="hero hero--text hero--short">
+    <div class="wrap hero__in">
+      <div>
+        <span class="label">Community + Media · Events</span>
+        <h1>Every night, <em>one by one.</em></h1>
+        <p class="lede">Each night has its own story and its own photos. Jump to one, or scroll the whole run.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- jump links -->
+  <section class="sec sec--wine" style="padding-block:clamp(32px,4vw,56px)">
+    <div class="wrap"><div class="chips chips--light" id="event-chips" style="margin:0" aria-label="Jump to an event"></div></div>
+  </section>
+
+  <!-- one section per event, rendered from js/data.js -->
+  <div id="event-sections"></div>
+
+  <section class="sec sec--wine band" id="join">
+    <div class="wrap" data-reveal>
+      <span class="label">The list</span>
+      <h2>Don’t miss the <em>next one.</em></h2>
+      <p class="lede" style="margin:0 auto 32px">Dates, RSVPs and early access — before anywhere else.</p>
+      <form class="form inline-form" data-form="community" data-success="You’re on the list ✦ See you at the Haus.">
+        <div class="hp" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+        <div class="field"><label for="ev-email">Email</label><input id="ev-email" name="email" type="email" required data-name="email" placeholder="you@email.com" autocomplete="email"></div>
+        <button class="btn btn--solid" type="submit">Join</button>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

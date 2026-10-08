@@ -186,9 +186,11 @@ p { margin: 0 0 1em; }
 .room--featured .room__no { color: var(--wine-700); }
 
 /* ---------- stats ---------- */
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px 20px; text-align: center; }
+.stats--6 { grid-template-columns: repeat(3, 1fr); }
 .stat b { display: block; font-family: var(--serif); font-weight: 400; font-size: clamp(3rem, 6vw, 5.2rem); line-height: 1; }
-.stat span { font-family: var(--mono); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; opacity: .8; }
+.stat b.is-range { font-size: clamp(1.8rem, 3.4vw, 2.9rem); }
+.stat span { font-family: var(--mono); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; opacity: .8; display: block; margin-top: 10px; }
 
 /* placeholder-text marker: anything still needing real content */
 .todo { background: repeating-linear-gradient(-45deg, rgba(217,165,160,.22) 0 6px, transparent 6px 12px); outline: 1px dashed currentColor; outline-offset: 3px; border-radius: 2px; }

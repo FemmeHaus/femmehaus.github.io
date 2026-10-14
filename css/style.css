@@ -295,8 +295,8 @@ p { margin: 0 0 1em; }
 .sec--wine .field input:focus, .sec--deep .field input:focus, .hero .field input:focus { border-color: var(--rose); }
 .field input::placeholder, .field textarea::placeholder { color: inherit; opacity: .45; }
 .checks { display: flex; flex-wrap: wrap; gap: 10px; border: 0; padding: 0; margin: 0; }
-.checks label { font-family: var(--sans); font-size: .9rem; letter-spacing: 0; text-transform: none; opacity: 1; cursor: pointer; }
-.checks input { position: absolute; opacity: 0; }
+.checks label { position: relative; font-family: var(--sans); font-size: .9rem; letter-spacing: 0; text-transform: none; opacity: 1; cursor: pointer; }
+.checks input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; }
 .checks span { display: inline-block; padding: .5em 1.1em; border: 1px solid currentColor; border-radius: 999px; transition: .25s; }
 .checks input:checked + span { background: var(--wine-700); border-color: var(--wine-700); color: var(--cream); }
 .sec--wine .checks input:checked + span, .sec--deep .checks input:checked + span { background: var(--cream); color: var(--wine-800); border-color: var(--cream); }
@@ -354,7 +354,7 @@ p { margin: 0 0 1em; }
     position: fixed; inset: 0; background: var(--wine-950); flex-direction: column; justify-content: center; gap: 26px;
     opacity: 0; visibility: hidden; transition: .4s var(--ease); z-index: -1;
   }
-  .nav.is-open .nav__links { opacity: 1; visibility: visible; }
+  .nav.is-open .nav__links { opacity: 1; visibility: visible; touch-action: none; }
   .nav__links a { font-size: 1rem; }
   .nav__toggle { z-index: 2; }
   .hero__in, .hero--short .hero__in, .split { grid-template-columns: 1fr; }
@@ -405,6 +405,7 @@ p { margin: 0 0 1em; }
 /* ---------- reels ---------- */
 .reels { display: flex; flex-wrap: wrap; gap: clamp(16px, 3vw, 36px); justify-content: center; }
 .reel { margin: 0; position: relative; width: min(260px, 44vw); aspect-ratio: 9/16; border-radius: 6px; overflow: hidden; background: var(--wine-950); box-shadow: 0 30px 60px -30px rgba(0,0,0,.7); }
+.reel--wide { width: min(462px, 82vw); aspect-ratio: 16/9; }
 .reel video { width: 100%; height: 100%; object-fit: cover; cursor: pointer; }
 .reel__play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 64px; height: 64px; border-radius: 50%; border: 1px solid var(--cream); background: rgba(30,4,6,.5); backdrop-filter: blur(4px); color: var(--cream); font-size: 1rem; cursor: pointer; padding-left: 4px; transition: transform .35s var(--ease), background .35s; }
 .reel__play:hover { transform: translate(-50%, -50%) scale(1.08); background: var(--rouge); }

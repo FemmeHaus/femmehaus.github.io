@@ -56,8 +56,7 @@
           P("wnba-trio", "Three guests pose in front of screens showing the game"),
           P("wnba-ice", "Cans and bottles chilling in a tub of ice"),
           P("wnba-coaster", "A 'femmehaus presents' coaster reading 'Let's Marc the Summer'"),
-          P("wnba-board", "A hand-written 'Let's Marc the Summer' message board beside a check-in"),
-          P("gifting-pattern", "Pattern hair-care products laid out on a tote reading 'Hair Care Is Self-Care'")
+          P("wnba-board", "A hand-written 'Let's Marc the Summer' message board beside a check-in")
         ],
         attendance: null, rsvp: ""
       },
@@ -65,10 +64,11 @@
         id: "dinner-at-the-haus",
         title: "Dinner at <em>the Haus</em>",
         plain: "Dinner at the Haus",
-        presenter: "FemmeHaus presents",
+        presenter: "FemmeHaus presents · The Girls",
         date: null, time: "", venue: "",
-        blurb: "One long table dressed in red roses, candlelight and hand-set place cards, in a brick-walled kitchen space. Friends toasted, a host took the mic, and there was a white-wall photo corner for everyone who wanted the picture.",
+        blurb: "One long table dressed in red roses, candlelight and hand-set place cards, in a brick-walled kitchen space. Friends toasted, a host took the mic, and there was a white-wall photo corner for everyone who wanted the picture — gifted that night with Pattern, because hair care is self-care.",
         photos: [
+          P("gifting-pattern", "Pattern hair-care products laid out on a tote reading 'Hair Care Is Self-Care'"),
           P("kitchen-group", "A large group of women gathered around a kitchen island"),
           P("dinner-roses", "A tablescape of red roses, candles and place cards"),
           P("dinner-four", "Four friends seated at a table dressed with red roses and candles"),
@@ -96,9 +96,7 @@
           P("legacy-cover", "The Legacy Edit graphic: two friends laughing beneath the title"),
           P("legacy-1", "Two friends embrace against a white backdrop"),
           P("legacy-2", "A guest in a black bow top poses with a friend against a white backdrop"),
-          P("legacy-cheers", "Two friends laugh and raise a glass of red wine"),
-          P("booth-bw", "Three friends pose in a black-and-white photo booth shot"),
-          P("booth-pink", "Four friends pose with finger guns against a white wall")
+          P("legacy-cheers", "Two friends laugh and raise a glass of red wine")
         ],
         attendance: null, rsvp: ""
       },
@@ -108,7 +106,7 @@
         plain: "Fore the Girls",
         presenter: "FemmeHaus presents",
         date: null, time: "", venue: "",
-        blurb: "Tennis whites, a golf cart and a welcome sign that said it all. Fore the Girls took a day on the course and made it ours.",
+        blurb: "Tennis whites, a golf cart and a welcome sign that said it all. We brought in Raquel Simpson to teach Black women how to play golf — Fore the Girls took a day on the course and made it ours.",
         photos: [
           P("golf-cart", "Two guests in tennis whites lean on a golf cart beside a 'Fore the Girls' welcome sign"),
           P("fore-the-girls-2", "Four women in tennis whites on and around a golf cart")
@@ -119,9 +117,9 @@
         id: "race-day",
         title: "<em>Race</em> Day",
         plain: "Race Day",
-        presenter: "FemmeHaus presents",
+        presenter: "By invitation from NASCAR",
         date: null, time: "", venue: "",
-        blurb: "Race suits, helmets and a stock car on the track — proof that a FemmeHaus outing doesn't have to happen indoors.",
+        blurb: "NASCAR invited FemmeHaus to the private pre-cup Series Chicago street racing event — race suits, helmets and a stock car on the track, proof that a FemmeHaus outing doesn't have to happen indoors.",
         photos: [
           P("race-helmets", "Two guests in racing suits fixing each other's helmets on a track"),
           P("race-car", "A stock car parked on a racetrack under a big sky")
@@ -136,7 +134,9 @@
         date: null, time: "", venue: "",
         blurb: "The Victoria's Secret Fashion Show, watched together: friends, a branded backdrop and full glam — the runway, on our terms.",
         photos: [
-          P("vs-watch-party", "Three friends in front of the Victoria's Secret Fashion Show Watch Party backdrop")
+          P("vs-watch-party", "Three friends in front of the Victoria's Secret Fashion Show Watch Party backdrop"),
+          P("booth-bw", "Four friends pose in a black-and-white photo booth shot"),
+          P("booth-pink", "Three friends pose together, one in a blonde wig making a shush gesture")
         ],
         attendance: null, rsvp: ""
       },
@@ -162,7 +162,7 @@
       P("portrait-3", "A guest with long curls in a cream top, lit by camera flash", "Faces of the Haus"),
       P("race-helmets", "Two guests in racing suits fixing each other's helmets on a track", "Race day"),
       P("kitchen-group", "A large group of women gathered around a kitchen island", "The kitchen"),
-      P("booth-bw", "Three friends pose in a black-and-white photo booth shot", "Photo booth"),
+      P("booth-bw", "Four friends pose in a black-and-white photo booth shot", "Photo booth"),
       P("legacy-2", "A guest in a black bow top poses with a friend against a white backdrop", "The Legacy Edit"),
       P("dinner-speaker", "A host speaks into a microphone above a table of red flowers", "Dinner"),
       P("mask-train", "A guest in a red satin dress photographs herself at night", "10%"),
@@ -173,7 +173,7 @@
       P("night-hug", "Two friends hug and laugh at night", "After hours"),
       P("kitchen-pink", "Three friends in bright summer dresses at a table", "The kitchen"),
       P("race-car", "A stock car parked on a racetrack under a big sky", "Race day"),
-      P("booth-pink", "Four friends pose with finger guns against a white wall", "Photo booth"),
+      P("booth-pink", "Three friends pose together, one in a blonde wig making a shush gesture", "Photo booth"),
       P("portrait-4", "A smiling guest in a denim jacket, lit by flash", "Faces of the Haus"),
       P("wnba-party", "A crowded night at the Marc Nolan bar", "WNBA All-Star Weekend"),
       P("dinner-roses", "A tablescape of red roses, candles and place cards", "Dinner"),
@@ -193,14 +193,17 @@
     // Brand-side proof for the Activations page
     activation: [
       P("wnba-coaster", "A 'femmehaus presents' coaster reading 'Let's Marc the Summer'", "Branded touchpoints"),
-      P("gifting-pattern", "Pattern hair-care products laid out on a tote reading 'Hair Care Is Self-Care'", "Gifting"),
-      P("wnba-shelf", "A guest holds a product beside Marc Nolan's shelves", "Product moments"),
+      P("wnba-ball", "A basketball, a croc-embossed bag and a guest against a red wall", "Product moments"),
+      P("wnba-shelf", "A guest holds a product beside Marc Nolan's shelves", "In the room"),
       P("wnba-board", "A hand-written 'Let's Marc the Summer' message board beside a check-in", "On-site signage")
     ],
 
     // Short vertical clips. Compressed mp4s live in assets/video/.
     reels: [
-      { src: "assets/video/reel-marcnolan.mp4", poster: "assets/video/reel-marcnolan.jpg", cap: "Marc Nolan, before doors" }
+      { src: "assets/video/reel-marcnolan.mp4", poster: "assets/video/reel-marcnolan.jpg", cap: "Marc Nolan, before doors" },
+      { src: "assets/video/reel-wnba-store.mp4", poster: "assets/video/reel-wnba-store.jpg", cap: "WNBA Happy Hour, live at Marc Nolan", wide: true },
+      { src: "assets/video/reel-girls-dinner.mp4", poster: "assets/video/reel-girls-dinner.jpg", cap: "Dinner at the Haus — The Girls" },
+      { src: "assets/video/reel-dinner-cocktail.mp4", poster: "assets/video/reel-dinner-cocktail.jpg", cap: "Dinner at the Haus — the details" }
     ],
 
     // Media / content hub. cat: recap | editorial | culture
@@ -219,4 +222,4 @@
 })();
 
 /* ---- generated: thumbnail sizes so lazy photos reserve their space. Re-run when adding photos; missing entries just load without a reserved size. ---- */
-window.FH_DIMS = {"booth-bw":[720,480],"booth-pink":[720,480],"dinner-bench":[480,720],"dinner-four":[720,705],"dinner-green":[480,720],"dinner-long":[720,480],"dinner-magazine":[540,720],"dinner-roses":[480,720],"dinner-speaker":[480,720],"fore-the-girls-2":[592,736],"gifting-pattern":[561,720],"golf-cart":[720,480],"kitchen-cheers":[576,720],"kitchen-counter":[720,480],"kitchen-duo":[720,480],"kitchen-group":[540,360],"kitchen-laugh":[720,576],"kitchen-pink":[720,576],"legacy-1":[480,720],"legacy-2":[480,720],"legacy-cheers":[536,788],"legacy-cover":[590,716],"marcnolan-guest":[720,771],"marcnolan-trio":[720,408],"mask-crowd":[480,720],"mask-group":[480,720],"mask-train":[480,720],"night-hug":[480,720],"pocket-watch":[480,720],"portrait-1":[540,720],"portrait-2":[540,720],"portrait-3":[540,720],"portrait-4":[540,720],"portrait-5":[540,720],"race-car":[540,720],"race-helmets":[540,720],"team-asha":[380,507],"vs-watch-party":[586,680],"wnba-ball":[576,720],"wnba-bar":[576,720],"wnba-board":[540,720],"wnba-coaster":[576,720],"wnba-friends":[480,720],"wnba-ice":[575,720],"wnba-party":[480,720],"wnba-shelf":[480,720],"wnba-sign":[576,720],"wnba-tee":[576,720],"wnba-trio":[480,720],"wnba-wallet":[575,720]};
+window.FH_DIMS = {"booth-bw":[720,480],"booth-pink":[720,480],"dinner-bench":[480,720],"dinner-four":[720,705],"dinner-green":[480,720],"dinner-long":[720,480],"dinner-magazine":[540,720],"dinner-roses":[480,720],"dinner-speaker":[480,720],"fore-the-girls-2":[592,736],"gifting-pattern":[561,720],"golf-cart":[720,480],"kitchen-cheers":[576,720],"kitchen-counter":[720,480],"kitchen-duo":[720,480],"kitchen-group":[540,360],"kitchen-laugh":[720,576],"kitchen-pink":[720,576],"legacy-1":[480,720],"legacy-2":[480,720],"legacy-cheers":[536,788],"legacy-cover":[590,716],"marcnolan-guest":[720,771],"marcnolan-trio":[720,408],"mask-crowd":[480,720],"mask-group":[480,720],"mask-train":[480,720],"night-hug":[480,720],"pocket-watch":[480,720],"portrait-1":[540,720],"portrait-2":[540,720],"portrait-3":[540,720],"portrait-4":[540,720],"portrait-5":[540,720],"race-car":[540,720],"race-helmets":[540,720],"team-asha":[500,667],"vs-watch-party":[586,680],"wnba-ball":[576,720],"wnba-bar":[576,720],"wnba-board":[540,720],"wnba-coaster":[576,720],"wnba-friends":[480,720],"wnba-ice":[575,720],"wnba-party":[480,720],"wnba-shelf":[480,720],"wnba-sign":[576,720],"wnba-tee":[576,720],"wnba-trio":[480,720],"wnba-wallet":[575,720]};

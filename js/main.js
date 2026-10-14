@@ -9,14 +9,35 @@
     var toggle = nav.querySelector(".nav__toggle");
     var onScroll = function () { nav.classList.toggle("is-solid", window.scrollY > 40); };
     onScroll(); window.addEventListener("scroll", onScroll, { passive: true });
+
+    // iOS Safari doesn't honour body{overflow:hidden} behind a fixed overlay — the page
+    // behind the open mobile menu stays scrollable/jittery. Pinning the body in place with
+    // position:fixed (and restoring the exact scroll position after) is the robust fix.
+    var lockY = 0;
+    function lockScroll() {
+      lockY = window.scrollY || doc.documentElement.scrollTop || 0;
+      doc.body.style.position = "fixed";
+      doc.body.style.top = -lockY + "px";
+      doc.body.style.left = "0"; doc.body.style.right = "0"; doc.body.style.width = "100%";
+    }
+    function unlockScroll() {
+      doc.body.style.position = ""; doc.body.style.top = ""; doc.body.style.left = ""; doc.body.style.right = ""; doc.body.style.width = "";
+      window.scrollTo({ top: lockY, left: 0, behavior: "instant" });   // instant: site-wide smooth-scroll would otherwise animate the snap-back
+    }
+    function closeMenu() {
+      if (!nav.classList.contains("is-open")) return;
+      nav.classList.remove("is-open"); toggle.setAttribute("aria-expanded", "false"); unlockScroll();
+    }
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open);
-      doc.body.style.overflow = open ? "hidden" : "";
+      if (open) lockScroll(); else unlockScroll();
     });
     nav.querySelectorAll(".nav__links a").forEach(function (a) {
-      a.addEventListener("click", function () { nav.classList.remove("is-open"); doc.body.style.overflow = ""; });
+      a.addEventListener("click", closeMenu);
     });
+    // orientation/resize past the mobile breakpoint shouldn't leave the page permanently pinned
+    window.addEventListener("resize", function () { if (window.innerWidth > 980) closeMenu(); });
   }
 
   /* ---------- reveal on scroll (runs last, after JS-rendered sections exist) ---------- */
@@ -174,7 +195,7 @@
 
   var rl = doc.getElementById("reels");
   if (rl) rl.innerHTML = D.reels.map(function (r) {
-    return '<figure class="reel" data-reveal><video src="' + r.src + '" poster="' + r.poster + '" preload="none" playsinline muted loop></video>' +
+    return '<figure class="reel' + (r.wide ? " reel--wide" : "") + '" data-reveal><video src="' + r.src + '" poster="' + r.poster + '" preload="none" playsinline muted loop></video>' +
       '<button class="reel__play" aria-label="Play clip: ' + r.cap + '">▶</button><figcaption>' + r.cap + '</figcaption></figure>';
   }).join("");
   doc.addEventListener("click", function (e) {
